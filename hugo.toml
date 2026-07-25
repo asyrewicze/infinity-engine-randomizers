@@ -1,0 +1,14 @@
+baseURL = "/"
+title = "Infinity Engine Randomizers"
+
+[languages.en]
+  locale = "en-us"
+
+# no taxonomies needed for this site
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Roll a random build for a fresh Infinity Engine challenge run."
+
+[minify]
+  disableJS = false

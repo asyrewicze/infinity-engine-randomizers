@@ -1,0 +1,68 @@
+{
+  "game": "Baldur's Gate 1 (EE)",
+  "classes": [
+    "Fighter", "Kensai", "Berserker", "Wizard Slayer", "Dwarven Defender", "Barbarian",
+    "Ranger", "Archer", "Stalker", "Beast Master",
+    "Paladin", "Cavalier", "Undead Hunter", "Inquisitor", "Blackguard",
+    "Cleric", "Priest of Lathander", "Priest of Helm", "Priest of Talos", "Priest of Tyr",
+    "Druid", "Totemic Druid", "Avenger", "Shapeshifter", "Shaman",
+    "Mage",
+    "Thief", "Assassin", "Bounty Hunter", "Swashbuckler", "Shadowdancer",
+    "Bard", "Blade", "Jester", "Skald",
+    "Monk", "Sun Soul Monk", "Dark Moon Monk",
+    "Fighter/Thief", "Fighter/Cleric", "Fighter/Mage", "Mage/Thief", "Cleric/Mage",
+    "Cleric/Thief", "Fighter/Druid", "Cleric/Ranger", "Fighter/Mage/Thief", "Fighter/Mage/Cleric"
+  ],
+  "mageKits": [
+    "Mage", "Abjurer", "Conjurer", "Diviner", "Enchanter", "Illusionist",
+    "Invoker", "Necromancer", "Transmuter", "Wild Mage", "Sorcerer", "Dragon Disciple"
+  ],
+  "alignments": {
+    "LG": "Lawful Good", "NG": "Neutral Good", "CG": "Chaotic Good",
+    "LN": "Lawful Neutral", "TN": "True Neutral", "CN": "Chaotic Neutral",
+    "LE": "Lawful Evil", "NE": "Neutral Evil", "CE": "Chaotic Evil"
+  },
+  "groups": {
+    "All": ["LG", "NG", "CG", "LN", "TN", "CN", "LE", "NE", "CE"],
+    "Good": ["LG", "NG", "CG"],
+    "Evil": ["LE", "NE", "CE"],
+    "NonLawful": ["NG", "CG", "TN", "CN", "NE", "CE"],
+    "Lawful": ["LG", "LN", "LE"],
+    "Neutral": ["LN", "TN", "CN"]
+  },
+  "alignmentRules": {
+    "Fighter": "All", "Kensai": "All", "Wizard Slayer": "All", "Dwarven Defender": "All",
+    "Berserker": "NonLawful", "Barbarian": "NonLawful",
+    "Ranger": "Good", "Archer": "Good", "Beast Master": "Good", "Stalker": "All",
+    "Paladin": ["LG"], "Cavalier": ["LG"], "Inquisitor": ["LG"],
+    "Undead Hunter": "Good", "Blackguard": "Evil",
+    "Cleric": "All", "Priest of Lathander": "Good", "Priest of Helm": "Lawful",
+    "Priest of Talos": ["CE", "CN", "NE"], "Priest of Tyr": ["LG"],
+    "Druid": "Neutral", "Totemic Druid": "Neutral", "Avenger": "Neutral",
+    "Shapeshifter": "Neutral", "Shaman": "Neutral",
+    "Mage": "All", "Abjurer": "All", "Conjurer": "All", "Diviner": "All",
+    "Enchanter": "All", "Illusionist": "All", "Invoker": "All", "Necromancer": "All",
+    "Transmuter": "All", "Wild Mage": "All", "Sorcerer": "All", "Dragon Disciple": "All",
+    "Thief": "All", "Bounty Hunter": "All", "Swashbuckler": "All", "Shadowdancer": "All",
+    "Assassin": "Evil",
+    "Bard": "NonLawful", "Blade": "NonLawful", "Jester": "NonLawful", "Skald": "NonLawful",
+    "Monk": "Lawful", "Sun Soul Monk": "Good", "Dark Moon Monk": "Evil",
+    "Fighter/Thief": "All", "Fighter/Cleric": "All", "Fighter/Mage": "All",
+    "Mage/Thief": "All", "Cleric/Mage": "All", "Cleric/Thief": "All",
+    "Fighter/Mage/Thief": "All", "Fighter/Mage/Cleric": "All",
+    "Fighter/Druid": "Neutral", "Cleric/Ranger": "Good"
+  },
+  "duos": [
+    ["Xzar", "Montaron"],
+    ["Khalid", "Jaheira"],
+    ["Eldoth", "Skie"],
+    ["Minsc", "Dynaheir"]
+  ],
+  "allMembers": [
+    "Ajantis", "Alora", "Branwen", "Dorn Il-Khan", "Dynaheir", "Edwin", "Eldoth",
+    "Faldorn", "Garrick", "Imoen", "Jaheira", "Kagain", "Khalid", "Kivan", "Minsc",
+    "Montaron", "Neera", "Quayle", "Rasaad", "Safana", "Shar-Teel", "Skie", "Tiax",
+    "Viconia", "Xan", "Xzar", "Yeslick", "Baeloth"
+  ],
+  "partySize": 5
+}
