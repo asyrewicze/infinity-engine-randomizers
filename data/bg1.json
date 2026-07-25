@@ -6,7 +6,7 @@
     "Paladin", "Cavalier", "Undead Hunter", "Inquisitor", "Blackguard",
     "Cleric", "Priest of Lathander", "Priest of Helm", "Priest of Talos", "Priest of Tyr",
     "Druid", "Totemic Druid", "Avenger", "Shapeshifter", "Shaman",
-    "Mage",
+    "Mage", "Wild Mage", "Sorcerer", "Dragon Disciple",
     "Thief", "Assassin", "Bounty Hunter", "Swashbuckler", "Shadowdancer",
     "Bard", "Blade", "Jester", "Skald",
     "Monk", "Sun Soul Monk", "Dark Moon Monk",
@@ -15,7 +15,7 @@
   ],
   "mageKits": [
     "Mage", "Abjurer", "Conjurer", "Diviner", "Enchanter", "Illusionist",
-    "Invoker", "Necromancer", "Transmuter", "Wild Mage", "Sorcerer", "Dragon Disciple"
+    "Invoker", "Necromancer", "Transmuter"
   ],
   "alignments": {
     "LG": "Lawful Good", "NG": "Neutral Good", "CG": "Chaotic Good",
