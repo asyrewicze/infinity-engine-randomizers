@@ -109,3 +109,15 @@ PowerShell Core / `pwsh`):
 
 Additional randomizers for **Baldur's Gate 2** and **Icewind Dale** are planned,
 each as its own game data file feeding the same roller.
+
+## License
+
+Copyright (C) 2026 Andy Syrewicze.
+
+This project is licensed under the **GNU General Public License v3.0** — see
+[`LICENSE`](LICENSE) for the full text. You are free to use, modify, and
+redistribute it under the terms of the GPLv3.
+
+_Baldur's Gate, Icewind Dale, and related names and content are trademarks of
+their respective owners; this is an unofficial fan-made tool and is not
+affiliated with or endorsed by them._
