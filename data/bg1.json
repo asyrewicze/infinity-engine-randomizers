@@ -58,6 +58,9 @@
     ["Eldoth", "Skie"],
     ["Minsc", "Dynaheir"]
   ],
+  "exclusions": [
+    ["Edwin", "Dynaheir"]
+  ],
   "allMembers": [
     "Ajantis", "Alora", "Branwen", "Dorn Il-Khan", "Dynaheir", "Edwin", "Eldoth",
     "Faldorn", "Garrick", "Imoen", "Jaheira", "Kagain", "Khalid", "Kivan", "Minsc",

@@ -43,8 +43,19 @@
     return pick(names);
   }
 
+  // Some NPCs refuse to travel together (e.g. Edwin wants Dynaheir dead), so
+  // a candidate can't join if it would put an excluded pair in the same party.
+  const EXCLUSIONS = DATA.exclusions || [];
+  function conflictsWith(members, party) {
+    return EXCLUSIONS.some(([a, b]) => {
+      const present = (name) => party.includes(name) || members.includes(name);
+      return present(a) && present(b);
+    });
+  }
+
   // Get-PartyMembers: duos stay bundled as 2-member units, everyone else is a
-  // 1-member unit. Shuffle the units and greedily fill up to partySize.
+  // 1-member unit. Shuffle the units and greedily fill up to partySize,
+  // skipping any unit that would violate an exclusion.
   function rollParty() {
     const duoMembers = DATA.duos.flat();
     const singles = DATA.allMembers.filter((m) => !duoMembers.includes(m));
@@ -54,7 +65,9 @@
 
     const party = [];
     for (const unit of shuffled) {
-      if (party.length + unit.length <= DATA.partySize) party.push(...unit);
+      if (party.length + unit.length <= DATA.partySize && !conflictsWith(unit, party)) {
+        party.push(...unit);
+      }
       if (party.length >= DATA.partySize) break;
     }
     return party;
