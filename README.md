@@ -31,7 +31,7 @@ flowchart TD
     end
 
     subgraph run["Run time — browser"]
-        click(["User clicks<br/>“Roll a Run”"]) --> parse["Parse injected JSON"]
+        rollBtn(["User clicks<br/>“Roll a Run”"]) --> parse["Parse injected JSON"]
 
         parse --> rollClass["Roll class<br/>from full kit list"]
         rollClass --> mageCheck{"Rolled a<br/>generalist Mage?"}
@@ -45,7 +45,7 @@ flowchart TD
         excl --> reveal["Reveal class · alignment · party"]
     end
 
-    page -.served to.-> click
+    page -.served to.-> rollBtn
 ```
 
 ## The rolls
