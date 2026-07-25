@@ -27,19 +27,18 @@
     "Good": ["LG", "NG", "CG"],
     "Evil": ["LE", "NE", "CE"],
     "NonLawful": ["NG", "CG", "TN", "CN", "NE", "CE"],
-    "Lawful": ["LG", "LN", "LE"],
-    "Neutral": ["LN", "TN", "CN"]
+    "Lawful": ["LG", "LN", "LE"]
   },
   "alignmentRules": {
     "Fighter": "All", "Kensai": "All", "Wizard Slayer": "All", "Dwarven Defender": "All",
     "Berserker": "NonLawful", "Barbarian": "NonLawful",
-    "Ranger": "Good", "Archer": "Good", "Beast Master": "Good", "Stalker": "All",
+    "Ranger": "Good", "Archer": "Good", "Beast Master": "Good", "Stalker": "Good",
     "Paladin": ["LG"], "Cavalier": ["LG"], "Inquisitor": ["LG"],
     "Undead Hunter": "Good", "Blackguard": "Evil",
     "Cleric": "All", "Priest of Lathander": "Good", "Priest of Helm": "Lawful",
     "Priest of Talos": ["CE", "CN", "NE"], "Priest of Tyr": ["LG"],
-    "Druid": "Neutral", "Totemic Druid": "Neutral", "Avenger": "Neutral",
-    "Shapeshifter": "Neutral", "Shaman": "Neutral",
+    "Druid": ["TN"], "Totemic Druid": ["TN"], "Avenger": ["TN"],
+    "Shapeshifter": ["TN"], "Shaman": ["TN"],
     "Mage": "All", "Abjurer": "All", "Conjurer": "All", "Diviner": "All",
     "Enchanter": "All", "Illusionist": "All", "Invoker": "All", "Necromancer": "All",
     "Transmuter": "All", "Wild Mage": "All", "Sorcerer": "All", "Dragon Disciple": "All",
@@ -50,7 +49,7 @@
     "Fighter/Thief": "All", "Fighter/Cleric": "All", "Fighter/Mage": "All",
     "Mage/Thief": "All", "Cleric/Mage": "All", "Cleric/Thief": "All",
     "Fighter/Mage/Thief": "All", "Fighter/Mage/Cleric": "All",
-    "Fighter/Druid": "Neutral", "Cleric/Ranger": "Good"
+    "Fighter/Druid": ["TN"], "Cleric/Ranger": "Good"
   },
   "duos": [
     ["Xzar", "Montaron"],
