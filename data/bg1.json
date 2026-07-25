@@ -67,5 +67,10 @@
     "Montaron", "Neera", "Quayle", "Rasaad", "Safana", "Shar-Teel", "Skie", "Tiax",
     "Viconia", "Xan", "Xzar", "Yeslick", "Baeloth"
   ],
-  "partySize": 5
+  "partySize": 5,
+  "minscQuotes": [
+    "Butt Kicking for Goodness!",
+    "Squeeky Wheel Get's the Kick!",
+    "Full Plate, and Packing Steel"
+  ]
 }
