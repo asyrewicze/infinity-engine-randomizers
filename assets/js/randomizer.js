@@ -81,7 +81,25 @@
     alignVal: document.getElementById("alignment-value"),
     partyVal: document.getElementById("party-value"),
     cards: Array.from(document.querySelectorAll(".result-card")),
+    quote: document.getElementById("minsc-quote"),
+    quoteCap: document.getElementById("minsc-quote-cap"),
+    quoteFig: document.querySelector("figure.quote"),
   };
+
+  // Cycle through Minsc's quotes one per roll, starting at a random one so it
+  // isn't the same line every page load.
+  const QUOTES = DATA.minscQuotes || [];
+  let quoteIdx = Math.floor(Math.random() * (QUOTES.length || 1));
+
+  function showNextQuote() {
+    if (!QUOTES.length || !els.quoteFig) return;
+    els.quote.textContent = "“" + QUOTES[quoteIdx] + "”";
+    els.quoteCap.textContent = "— Minsc";
+    quoteIdx = (quoteIdx + 1) % QUOTES.length;
+    els.quoteFig.classList.remove("revealed");
+    void els.quoteFig.offsetWidth; // restart the fade on each roll
+    els.quoteFig.classList.add("revealed");
+  }
 
   function setCard(card, valueEl, text) {
     card.classList.remove("revealed");
@@ -125,6 +143,8 @@
       step();
       await new Promise((r) => setTimeout(r, 550));
     }
+
+    showNextQuote();
 
     els.results.classList.remove("rolling");
     els.rollBtn.disabled = false;

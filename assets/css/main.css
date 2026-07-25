@@ -129,6 +129,30 @@ body {
   font-size: 0.95rem;
 }
 
+/* --- Minsc quote --- */
+.quote {
+  margin: 2rem auto 0;
+  max-width: 40ch;
+  text-align: center;
+  opacity: 0; /* hidden until the first roll reveals it */
+}
+.quote.revealed {
+  animation: reveal 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.quote blockquote {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--parchment);
+}
+.quote figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 .site-footer {
   text-align: center;
   padding: 1.5rem;

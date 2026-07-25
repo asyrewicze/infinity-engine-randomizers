@@ -23,6 +23,11 @@
   </article>
 </section>
 
+<figure class="quote">
+  <blockquote id="minsc-quote" aria-live="polite"></blockquote>
+  <figcaption id="minsc-quote-cap"></figcaption>
+</figure>
+
 <script id="randomizer-data" type="application/json">{{ hugo.Data.bg1 | jsonify | safeJS }}</script>
 {{ $js := resources.Get "js/randomizer.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" defer></script>
