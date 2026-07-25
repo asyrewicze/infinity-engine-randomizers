@@ -1,0 +1,29 @@
+{{ define "main" }}
+<header class="hero">
+  <p class="eyebrow">Infinity Engine Randomizers</p>
+  <h1>{{ hugo.Data.bg1.game }}</h1>
+  <p class="tagline">Roll a random class, alignment, and party for a fresh challenge run.</p>
+  <button id="roll-btn" class="roll-btn">Roll a Run</button>
+</header>
+
+<section id="results" class="results">
+  <article class="result-card" data-cat="class">
+    <h2 class="result-label">Player Class</h2>
+    <p id="class-value" class="result-value">—</p>
+  </article>
+
+  <article class="result-card" data-cat="alignment">
+    <h2 class="result-label">Alignment</h2>
+    <p id="alignment-value" class="result-value">—</p>
+  </article>
+
+  <article class="result-card" data-cat="party">
+    <h2 class="result-label">Party</h2>
+    <div id="party-value" class="result-value party"></div>
+  </article>
+</section>
+
+<script id="randomizer-data" type="application/json">{{ hugo.Data.bg1 | jsonify | safeJS }}</script>
+{{ $js := resources.Get "js/randomizer.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
